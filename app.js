@@ -12,6 +12,8 @@ const app = express();
 
 //serve static files
 app.use(express.static(__dirname+'/public'))
+//setting view engine
+app.set('view','ejs')
 //frontendRoute
 app.use('/', frontendRoute)
 //adminRoute
