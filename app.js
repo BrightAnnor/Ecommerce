@@ -10,6 +10,8 @@ const port = process.env.SERVER_PORT || 2020
 //server
 const app = express();
 
+//serve static files
+app.use(express.static(__dirname+'/public'))
 //frontendRoute
 app.use('/', frontendRoute)
 //adminRoute
