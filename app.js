@@ -15,7 +15,7 @@ const app = express();
 app.use(express.static(__dirname+'/public'))
 
 //setting view engine and layouts
-app.set('view','ejs')
+app.set('view engine','ejs')
 app.use(expressEjsLayout);
 
 //frontendRoute
