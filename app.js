@@ -17,10 +17,10 @@ app.use(express.static(__dirname+'/public'))
 //setting view engine and layouts
 app.set('view engine','ejs')
 app.use(expressEjsLayout);
-app.set('layout','pages/admin');
+app.set('layout','pages/admin/layouts/master');
 
 //frontendRoute
-app.use('/', frontendRoute)
+// app.use('/', frontendRoute)
 //adminRoute
 app.use('/admin',adminRoute)
 
